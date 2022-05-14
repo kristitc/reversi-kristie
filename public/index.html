@@ -14,7 +14,7 @@
     </style>
     <script type="text/javascript">
       function goToLobby() {
-        let username = $('#nameInput').val();
+        let username = encodeURI($('#nameInput').val());
         window.location.href = "lobby.html?username="+username;
       }
     </script>
