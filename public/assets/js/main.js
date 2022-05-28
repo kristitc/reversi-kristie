@@ -267,32 +267,41 @@ socket.on('game_update', (payload) => {
         if ((old_board[row][column] === '?') && (board[row][column] === ' ')) {
           graphic = "empty.gif"
           alt = "empty space";
-        } else if ((old_board[row][column] === '?') && (board[row][column] === 'w')) {
+        }
+        else if ((old_board[row][column] === '?') && (board[row][column] === 'w')) {
           graphic = "empty-to-white.gif"
           altTag = "white token";
-        } else if ((old_board[row][column] === '?') && (board[row][column] === 'b')) {
+        }
+        else if ((old_board[row][column] === '?') && (board[row][column] === 'b')) {
           graphic = "empty-to-black.gif"
           altTag = "black token";
-        } else if ((old_board[row][column] === ' ') && (board[row][column] === 'w')) {
+        }
+        else if ((old_board[row][column] === ' ') && (board[row][column] === 'w')) {
           graphic = "empty-to-white.gif"
           altTag = "white token";
-        } else if ((old_board[row][column] === ' ') && (board[row][column] === 'b')) {
+        }
+        else if ((old_board[row][column] === ' ') && (board[row][column] === 'b')) {
           graphic = "empty-to-black.gif"
-          alt = "black token";
-        } else if ((old_board[row][column] === 'w') && (board[row][column] === ' ')) {
+          altTag = "black token";
+        }
+        else if ((old_board[row][column] === 'w') && (board[row][column] === ' ')) {
           graphic = "white-to-empty.gif"
           altTag = "empty space";
-        } else if ((old_board[row][column] === 'b') && (board[row][column] === ' ')) {
+        }
+        else if ((old_board[row][column] === 'b') && (board[row][column] === ' ')) {
           graphic = "black-to-empty.gif"
-          alttag = "empty space";
-        } else if ((old_board[row][column] === 'w') && (board[row][column] === 'b')) {
+          altTag = "empty space";
+        }
+        else if ((old_board[row][column] === 'w') && (board[row][column] === 'b')) {
           graphic = "white-to-black.gif"
           altTag = "black token";
-        } else if ((old_board[row][column] === 'b') && (board[row][column] === 'w')) {
+        }
+        else if ((old_board[row][column] === 'b') && (board[row][column] === 'w')) {
           graphic = "black-to-white.gif"
           altTag = "white token";
-        } else {
-          graphic = "error.gif"
+        }
+        else {
+          graphic = "error.gif"; 
           altTag = "error";
         }
         const t = Date.now()
