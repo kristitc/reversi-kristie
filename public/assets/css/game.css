@@ -13,6 +13,11 @@ body {
   padding: 25px;
 }
 
+#whitesum,
+#blacksum {
+  font-size: 18px;
+}
+
 .join_room_response,
 .left_room_response{
   margin: 5px 1px;
@@ -38,4 +43,8 @@ table#game_board td {
   border: 1.5px solid black;
   margin: 1px;
   padding: 0px;
+}
+
+td.hovered_over:hover{
+  background-image: url('/assets/images/hover.gif');
 }
