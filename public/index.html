@@ -18,10 +18,10 @@
     <div class="container-fluid">
       <div class="row m-3">
         <div class="col text-center">
-          <a class="btn btn-success text-nowrap" href="about.html">About</a>
+          <a class="btn btn-success text-nowrap" style="font-family:'Cormorant Garamond', serif;" href="about.html">About</a>
         </div>
         <div class="col text-center">
-          <a class="btn btn-success text-nowrap" href="https://en.wikipedia.org/wiki/Reversi">Rules</a>
+          <a class="btn btn-success text-nowrap" style="font-family:'Cormorant Garamond', serif;" href="https://en.wikipedia.org/wiki/Reversi">Rules</a>
         </div>
       </div>
       <div class="row m-3">
@@ -32,9 +32,9 @@
       <div class="row align-items-center justify-content-center m-3">
         <div class="col-8">
           <div class="input-group">
-            <span class="input-group-text" id="displayName">Name</span>
-            <input type="text" class="form-control text-nowrap" id="nameInput" placeholder="Choose your display name" aria-label-="Enter your display name for use while planning Resersi" aria-aria-describedby="displayName"/>
-            <button type="submit" class="btn btn-dark text-nowrap" id="lobbyButton" onclick="goToLobby()">Enter Lobby</button>
+            <span class="input-group-text" id="displayName" style="font-family:'Cormorant Garamond', serif;">Name</span>
+            <input type="text" class="form-control text-nowrap" id="nameInput" style="font-family:'Cormorant Garamond', serif;" placeholder="Choose your display name" aria-label-="Enter your display name for use while planning Resersi" aria-aria-describedby="displayName"/>
+            <button type="submit" class="btn btn-dark text-nowrap" id="lobbyButton" style="font-family:'Cormorant Garamond', serif;" onclick="goToLobby()">Enter Lobby</button>
           </div>
         </div>
       </div>
@@ -58,7 +58,7 @@
         let key = e.which;
         if ( key == 13) {
           $('button[id = lobbyButton]').click();
-          return false; 
+          return false;
         }
       })
     </script>

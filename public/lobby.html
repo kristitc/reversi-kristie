@@ -16,6 +16,11 @@
     body {
       background-color: #F2E5D2;
     }
+
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+    }
+
     .headerrow {
       font-family: 'Cormorant Garamond', serif;
       font-style: italic;
@@ -26,6 +31,14 @@
     #messagePane {
       background-color: #000;
       padding: 25px;
+    }
+
+    #messages {
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    #players {
+      font-family: 'Cormorant Garamond', serif;
     }
 
     .join_room_response,
@@ -56,8 +69,9 @@
 
 
     <div class="row m-3">
-      <div class="col-md-4">
-        <h2>Players</h2>
+      <div class="col-md-4 text-center">
+        <img style="max-width: 45%" src="assets/images/playerimage.svg" alt="playerimage">
+        <h2 style="color: #2d6254; font-style: italic;">Players</h2>
         <div id="players" class="align-items-right justify-content-right m-3">
         </div>
       </div>
@@ -69,8 +83,8 @@
             <div class="row align-items-right justify-content-right my-3">
               <div class="col-8">
                 <div class="input-group">
-                  <input type="text" class="form-control text-nowrap" id="chatMessage" placeholder="Enter your message here" aria-label-="Enter your message to send to the chat room" />
-                  <button type="submit" class="btn btn-dark text-nowrap" id="chatButton" onclick="sendChatMessage()">Send</button>
+                  <input type="text" class="form-control text-nowrap" id="chatMessage" style="font-family:'Cormorant Garamond', serif;" placeholder="Enter your message here" aria-label-="Enter your message to send to the chat room" />
+                  <button type="submit" class="btn btn-dark text-nowrap" id="chatButton" style="font-family:'Cormorant Garamond', serif;" onclick="sendChatMessage()">Send</button>
                 </div>
               </div>
             </div>
